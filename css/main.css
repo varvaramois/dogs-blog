@@ -146,9 +146,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -160,6 +159,9 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 88px;
 }
 
 .advantages__item {
@@ -174,7 +176,7 @@ address {
 .advantages__icon {
   display: block;
   fill: #B2FFA6;
-  width: 50px;
+  width: 150px;
   height: 50px;
 }
 
