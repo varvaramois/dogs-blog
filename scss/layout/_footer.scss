@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #121212;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__link {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  @include transition(font-weight);
+  &:hover,
+  &:focus {
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+.accent {
+  font-weight: 700;
+  @include transition(font-weight);
+  .logo__link:hover &,
+  .logo__link:focus & {
+    font-weight: 300;
+  }
+}
+.footer__copyright {
+  color: #fff;
+  font-size: 24px;
+}

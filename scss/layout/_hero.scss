@@ -1,0 +1,25 @@
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__title {
+  margin-top: 150px;
+  color: $main-color;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.hero__title--bold {
+  font-weight: 700;
+}
+.hero__btn {
+  @extend %btn;
+  margin-top: 50px;
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

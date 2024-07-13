@@ -1,0 +1,27 @@
+.about-us {
+  background-color: #efefef;
+}
+.about-us__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us__wrapper {
+  max-width: 800px;
+}
+.about-us__title {
+  color: $main-color;
+  font-size: 40px;
+  line-height: normal;
+  margin-top: 98px;
+  margin-bottom: 30px;
+}
+.about-us__btn {
+  @extend %btn;
+  margin-top: 60px;
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,45 @@
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #EFEFEF;
+}
+.services__title {
+    color: $main-color;
+font-size: 40px;
+line-height: normal;
+text-align: center;
+margin-bottom: 40px;
+}
+.services__list {
+    margin-top: 56px;
+    display: flex;
+    gap: 20px;
+}
+.services__text {
+    color: $main-color;
+text-align: center;
+font-size: 32px;
+line-height: normal;
+}
+.services__img {
+    border-radius: 10px;
+}
+.services__subtitle {
+    color: $main-color;
+font-size: 24px;
+font-weight: 600;
+margin-top: 25px;
+}
+.services__btn {
+    @extend %btn;
+    background-color: transparent;
+    border: 3px solid $accent-color;
+display: block;
+margin: 80px auto 0;
+@include transition(background-color);
+&:hover,
+&:focus {
+background-color: $accent-color;
+  cursor: pointer;
+}
+}
